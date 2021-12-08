@@ -22,6 +22,9 @@ export class TaskController {
     // return new Promise((resolve, reject) => {
     //   setTimeout(() => reject('Error en Petición'), 2000);
     // });
+    // return new Promise((resolve, reject) => {
+    //   setTimeout(() => reject('Something was wrong!'), 15000);
+    // });
     return this.taskService.create(taskDTO);
   }
 
