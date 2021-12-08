@@ -16,6 +16,12 @@ export class TaskController {
 
   @Post()
   create(@Body() taskDTO: TaskDTO) {
+    // Simulación de errores
+    // throw new BadRequestException('Error en Petición');
+    // throw new HttpException('Error en Petición', HttpStatus.BAD_REQUEST);
+    // return new Promise((resolve, reject) => {
+    //   setTimeout(() => reject('Error en Petición'), 2000);
+    // });
     return this.taskService.create(taskDTO);
   }
 
