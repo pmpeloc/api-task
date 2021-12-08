@@ -1,4 +1,4 @@
-export interface TaskDTO {
+export interface ITaskDTO {
   description: string;
   isDone: boolean;
 }
